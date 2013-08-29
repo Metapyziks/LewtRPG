@@ -1,0 +1,55 @@
+(item) "diamond_rough" :
+{
+	"type"			: "loot",
+
+	"name"			: "Rough Diamond",
+	"image"			: "images_items_diamondrough",
+	"description"	: "An uncut diamond",
+	
+	"qualities" :
+	{
+		"tiny" 		: { "threshold" : 0.00, "value" : 50,   "prefix" : "Tiny" },
+		"small" 	: { "threshold" : 0.25, "value" : 75,   "prefix" : "Small" },
+		"normal" 	: { "threshold" : 0.50, "value" : 100 },
+		"big" 		: { "threshold" : 0.75, "value" : 175,  "prefix" : "Big" },
+		"huge" 		: { "threshold" : 1.00, "value" : 250,  "prefix" : "Huge" }
+	}
+},
+
+(item) "diamond_small" :
+{
+	"type"			: "loot",
+
+	"name"			: "Small Diamond",
+	"image"			: "images_items_diamondsmall",
+	"description"	: "A small cut diamond",
+	
+	"qualities" :
+	{
+		"broken" 	: { "threshold" : 0.00, "value" : 100,   "prefix" : "Broken" },
+		"fractured" : { "threshold" : 0.15, "value" : 250, 	 "prefix" : "Fractured" },
+		"normal" 	: { "threshold" : 0.40, "value" : 500 },
+		"fine" 		: { "threshold" : 0.75, "value" : 1000,  "prefix" : "Fine" },
+		"exquisite" : { "threshold" : 0.90, "value" : 1500,  "prefix" : "Exquisite" },
+		"perfect" 	: { "threshold" : 1.00, "value" : 2500,  "prefix" : "Perfect" }
+	}
+},
+
+(item) "diamond" :
+{
+	"type"			: "loot",
+
+	"name"			: "Diamond",
+	"image"			: "images_items_diamond",
+	"description"	: "A cut diamond",
+	
+	"qualities" :
+	{
+		"broken" 	: { "threshold" : 0.00, "value" : 200,   "prefix" : "Broken" },
+		"fractured" : { "threshold" : 0.15, "value" : 500, 	 "prefix" : "Fractured" },
+		"normal" 	: { "threshold" : 0.40, "value" : 1000 },
+		"fine" 		: { "threshold" : 0.75, "value" : 2000,  "prefix" : "Fine" },
+		"exquisite" : { "threshold" : 0.90, "value" : 3000,  "prefix" : "Exquisite" },
+		"perfect" 	: { "threshold" : 1.00, "value" : 5000,  "prefix" : "Perfect" }
+	}
+}

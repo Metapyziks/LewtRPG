@@ -1,0 +1,32 @@
+(spell) "lightningbolt" :
+{
+	"cast type" : "Projectile",
+	"elemental types" : [ "Electricity" ],
+	
+	"names" :
+	[
+		[ 0.00, "Pitiful Lightning Bolt"  ],
+		[ 0.15, "Weak Lightning Bolt" 	  ],
+		[ 0.30, "Lesser Lightning Bolt"   ],
+		[ 0.45, "Lightning Bolt" 		  ],
+		[ 0.60, "Greater Lightning Bolt"  ],
+		[ 0.75, "Shocking Lightning Bolt" ],
+		[ 0.90, "Godly Lightning Bolt" 	  ]
+	],
+	
+	"colour" : [ 253, 255, 204 ],
+	
+	"qualities" :
+	{
+		"mana cost" 	: [ 1, 	 25,	1.0 ],
+		"value"			: [ 100, 2500,	1.7 ],
+		
+		"hit damage"	: [ 3, 	 75,	1.3 ],
+		
+		"move speed"	: [ 12.0 ]
+	},
+	
+	"description" : "Launches a bolt of fast moving lightning from the caster's finger tips, dealing [hit damage] damage",
+	
+	"effect class" : "Scripts.Magic.GenericDamageEffect"
+}

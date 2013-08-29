@@ -1,0 +1,99 @@
+(skill) "damage" :
+{
+	"name"			: "Damage",
+	"abbreviation"	: "dmg",
+	"description"	: "Affects how much damage a character can inflict with each attack",
+	
+	"attribute mods" :
+	{
+		"st" : 50
+	}
+},
+
+(skill) "reflexes" :
+{
+	"name"			: "Reflexes",
+	"abbreviation"	: "rfl",
+	"description"	: "Affects how fast a character can attack and cast spells",
+	
+	"attribute mods" :
+	{
+		"dx" : 50
+	}
+},
+
+(skill) "manalevel" :
+{
+	"name"			: "Mana Level",
+	"abbreviation"	: "man",
+	"description"	: "Affects how much total Mana a character has",
+	
+	"attribute mods" :
+	{
+		"iq" : 50
+	}
+},
+
+(skill) "hitpoints" :
+{
+	"name"			: "Hit Points",
+	"abbreviation"	: "htp",
+	"description"	: "Affects how much damage a character can withstand",
+	
+	"attribute mods" :
+	{
+		"ht" : 50
+	}
+},
+
+(skill) "athletics" :
+{
+	"name"			: "Athletics",
+	"abbreviation"	: "ath",
+	"description"	: "Affects the speed a character can move",
+	
+	"attribute mods" :
+	{
+		"ht" : 30,	
+		"dx" : 20
+	}
+},
+
+(skill) "healing" :
+{
+	"name"			: "Healing",
+	"abbreviation"	: "hlg",
+	"description"	: "Affects how fast a character can heal wounds",
+	
+	"attribute mods" :
+	{
+		"ht" : 30,
+		"st" : 20
+	}
+},
+
+(skill) "meditation" :
+{
+	"name"			: "Meditation",
+	"abbreviation"	: "med",
+	"description"	: "Affects how fast a character can regenerate Mana",
+	
+	"attribute mods" :
+	{
+		"iq" : 30,
+		"ht" : 20
+	}
+},
+
+(skill) "accuracy" :
+{
+	"name"			: "Accuracy",
+	"abbreviation"	: "acc",
+	"description"	: "Affects the frequency of critical hits and aim of projectiles",
+	
+	"attribute mods" :
+	{
+		"dx" : 30,
+		"iq" : 20
+	}
+}

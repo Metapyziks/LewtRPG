@@ -1,0 +1,22 @@
+(dungeonclass) "fort" :
+{
+	"name" : "Fort",
+	
+	"evil min" : 63,
+	"evil max" : 255,
+	
+	"savage min" : 0,
+	"savage max" : 255,
+	
+	"temp min" : 15,
+	"temp max" : 159,
+	
+	"area min" : 512,
+	"area max" : 768,
+	
+	"icon file"	 : "images_dungeonicons",
+	"icon indexes" : [ 8, 9, 10, 11 ],
+	
+	"tile file"			 : "images_terrain",
+	"default skin index" : 2
+}

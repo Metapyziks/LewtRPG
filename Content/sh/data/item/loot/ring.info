@@ -1,0 +1,56 @@
+(item) "bronze_ring" :
+{
+	"type"			: "loot",
+
+	"name"			: "Bronze Ring",
+	"image"			: "images_items_bronzering",
+	"description"	: "A small ring made of bronze",
+	
+	"qualities" :
+	{
+		"broken" 	: { "threshold" : 0.00, "value" : 5,   "prefix" : "Broken" },
+		"normal" 	: { "threshold" : 0.15, "value" : 20 },
+		"decent" 	: { "threshold" : 0.50, "value" : 30,  "prefix" : "Decent" },
+		"fine" 		: { "threshold" : 0.75, "value" : 50,  "prefix" : "Fine" },
+		"exquisite" : { "threshold" : 0.90, "value" : 75,  "prefix" : "Exquisite" },
+		"perfect"	: { "threshold" : 1.00, "value" : 100, "prefix" : "Perfect" }
+	}
+},
+
+(item) "silver_ring" :
+{
+	"type"			: "loot",
+
+	"name"			: "Silver Ring",
+	"image"			: "images_items_silverring",
+	"description"	: "A small ring made of silver",
+	
+	"qualities" :
+	{
+		"broken" 	: { "threshold" : 0.00, "value" : 10,  "prefix" : "Broken" },
+		"normal" 	: { "threshold" : 0.15, "value" : 40 },
+		"decent" 	: { "threshold" : 0.50, "value" : 60,  "prefix" : "Decent" },
+		"fine" 		: { "threshold" : 0.75, "value" : 100, "prefix" : "Fine" },
+		"exquisite" : { "threshold" : 0.90, "value" : 150, "prefix" : "Exquisite" },
+		"perfect"	: { "threshold" : 1.00, "value" : 200, "prefix" : "Perfect" }
+	}
+},
+
+(item) "gold_ring" :
+{
+	"type"			: "loot",
+
+	"name"			: "Gold Ring",
+	"image"			: "images_items_goldring",
+	"description"	: "A small ring made of gold",
+	
+	"qualities" :
+	{
+		"broken" 	: { "threshold" : 0.00, "value" : 20,  "prefix" : "Broken" },
+		"normal" 	: { "threshold" : 0.15, "value" : 80 },
+		"decent" 	: { "threshold" : 0.50, "value" : 120, "prefix" : "Decent" },
+		"fine" 		: { "threshold" : 0.75, "value" : 200, "prefix" : "Fine" },
+		"exquisite" : { "threshold" : 0.90, "value" : 300, "prefix" : "Exquisite" },
+		"perfect"	: { "threshold" : 1.00, "value" : 400, "prefix" : "Perfect" }
+	}
+}

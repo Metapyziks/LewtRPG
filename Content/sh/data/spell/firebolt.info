@@ -1,0 +1,32 @@
+(spell) "firebolt" :
+{
+	"cast type" : "Projectile",
+	"elemental types" : [ "Fire" ],
+	
+	"names" :
+	[
+		[ 0.00, "Pitiful Fire Bolt" ],
+		[ 0.15, "Weak Fire Bolt" 	],
+		[ 0.30, "Lesser Fire Bolt" 	],
+		[ 0.45, "Fire Bolt" 		],
+		[ 0.60, "Greater Fire Bolt" ],
+		[ 0.75, "Blazing Fire Bolt" ],
+		[ 0.90, "Godly Fire Bolt" 	]
+	],
+	
+	"colour" : [ 255, 171, 63 ],
+	
+	"qualities" :
+	{
+		"mana cost" 	: [ 1, 	 25,	1.0 ],
+		"value"			: [ 100, 2500,	1.7 ],
+		
+		"hit damage"	: [ 5, 	 100,	1.3 ],
+		
+		"move speed"	: [ 8.0 ]
+	},
+	
+	"description" : "Launches a bolt of pure fire from the caster's finger tips, dealing [hit damage] damage",
+	
+	"effect class" : "Scripts.Magic.GenericDamageEffect"
+}

@@ -1,0 +1,22 @@
+(dungeonclass) "cave" :
+{	
+	"name" : "Cave",
+	
+	"evil min" : 0,
+	"evil max" : 127,
+	
+	"savage min" : 0,
+	"savage max" : 255,
+	
+	"temp min" : 0,
+	"temp max" : 255,
+	
+	"area min" : 1024,
+	"area max" : 8192,
+	
+	"icon file"	 : "images_dungeonicons",
+	"icon indexes" : [ 0, 1, 2, 3 ],
+	
+	"tile file"			 : "images_terrain",
+	"default skin index" : 1
+}

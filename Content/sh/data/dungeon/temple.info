@@ -1,0 +1,22 @@
+(dungeonclass) "temple" :
+{
+	"name" : "Temple",
+	
+	"evil min" : 31,
+	"evil max" : 255,
+	
+	"savage min" : 0,
+	"savage max" : 159,
+	
+	"temp min" : 15,
+	"temp max" : 159,
+	
+	"area min" : 1024,
+	"area max" : 8192,
+	
+	"icon file"	 : "images_dungeonicons",
+	"icon indexes" : [ 12, 13, 14, 15 ],
+	
+	"tile file"			 : "images_terrain",
+	"default skin index" : 2
+}

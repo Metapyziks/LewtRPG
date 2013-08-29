@@ -1,0 +1,7 @@
+"name"				"Lewt Content"
+"author"			"Metapyziks"
+"author email"		"robert@robertandsherman.co.uk"
+"author website"	"http://www.robertandsherman.co.uk/"
+"version"			"0.0.0.1"
+"description"		"Base shared content for Lewt"
+"destination"		"shared"

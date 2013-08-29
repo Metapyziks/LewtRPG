@@ -1,0 +1,22 @@
+(dungeonclass) "mine" :
+{
+	"name" : "Mine",
+	
+	"evil min" : 0,
+	"evil max" : 127,
+	
+	"savage min" : 0,
+	"savage max" : 191,
+	
+	"temp min" : 31,
+	"temp max" : 159,
+	
+	"area min" : 1024,
+	"area max" : 8192,
+	
+	"icon file"	 : "images_dungeonicons",
+	"icon indexes" : [ 4, 5, 6, 7 ],
+	
+	"tile file"			 : "images_terrain",
+	"default skin index" : 1
+}
