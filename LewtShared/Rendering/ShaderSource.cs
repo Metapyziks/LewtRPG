@@ -343,7 +343,7 @@ in vec2 in_trans_pos;
 
 out vec2 var_tex;
 
-out int var_trans_type;
+flat out int var_trans_type;
 out vec2 var_trans_pos;
 
 void main( void )
@@ -371,7 +371,7 @@ uniform sampler2D texture1;
             
 in vec2 var_tex;
 
-in int var_trans_type;
+flat in int var_trans_type;
 in vec2 var_trans_pos;
 
 out vec4 out_frag_colour;
