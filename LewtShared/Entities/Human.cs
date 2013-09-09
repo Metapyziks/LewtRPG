@@ -36,13 +36,13 @@ namespace Lewt.Shared.Entities
             FinalMaxHitPoints = 100;
 
             BaseMaxManaLevel = 0;
-            FinalMaxManaLevel = 50;
+            FinalMaxManaLevel = 500;
 
-            BaseWalkSpeed = 2.0;
-            FinalWalkSpeed = 6.0;
+            BaseWalkSpeed = 4.0;
+            FinalWalkSpeed = 12.0;
 
-            BaseManaRechargePeriod = 1.0;
-            FinalManaRechargePeriod = 1.0 / 16.0;
+            BaseManaRechargePeriod = 1.0 / 4.0;
+            FinalManaRechargePeriod = 1.0 / 64.0;
 
             BaseCastCooldownTime = 1.0;
             FinalCastCooldownTime = 1.0 / 8.0;
