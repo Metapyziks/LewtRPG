@@ -39,7 +39,7 @@ namespace Scripts.Entities
         {
             SkinID = 0;
             CollideWithEntities = true;
-            SetBoundingBox( 0.25, 0.125 );
+            SetBoundingBox(0.25, 0.125);
 
             myHealth = 50;
         }

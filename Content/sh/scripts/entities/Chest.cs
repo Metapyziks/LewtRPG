@@ -31,23 +31,19 @@ namespace Scripts.Entities
                 if ( IsServer && myInventory == null )
                 {
                     myInventory = new Inventory( this, 12 );
-
-                    int items = (int) ( Tools.Random() * ( 4 + Tools.Random() * 4 ) ) + 1;
-
-                    if ( Tools.Random() < 0.5 )
+                    int items = 4 + (int)(Tools.Random() * 4);
+                    SpellInfo[] spellTypes = SpellInfo.GetAll();
+                    ItemInfo[] loots = Loot.GetAll();
+                    for (int i = 0; i < items; ++i)
                     {
-                        ItemInfo[] loots = Loot.GetAll();
-
-                        for ( int i = 0; i < items; ++i )
-                            myInventory.Add( new Loot( loots[ (int) ( Tools.Random() * loots.Length ) ], Tools.Random() ) );
+                        if (Tools.Random() < 0.25)
+                            myInventory.Add(new SpellOrb(spellTypes[(int)(Tools.Random() * spellTypes.Length)], Tools.Random()));
+                        else if (Tools.Random() < 0.5)
+                            myInventory.Add(new SpellScroll(spellTypes[(int)(Tools.Random() * spellTypes.Length)], Tools.Random()));
+                        else
+                            myInventory.Add(new Loot(loots[(int)(Tools.Random() * loots.Length)], Tools.Random()));
                     }
-                    else
-                    {
-                        SpellInfo[] spellTypes = SpellInfo.GetAll();
 
-                        for ( int i = 0; i < items; ++i )
-                            myInventory.Add( new SpellScroll( spellTypes[ (int)( Tools.Random() * spellTypes.Length ) ], Tools.Random() ) );
-                    }
                 }
 
                 return myInventory;
