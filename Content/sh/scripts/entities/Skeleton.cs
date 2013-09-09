@@ -10,13 +10,22 @@ using Lewt.Shared.Rendering;
 using Lewt.Shared.Entities;
 using Lewt.Shared.World;
 using Lewt.Shared;
+using Lewt.Shared.Magic;
 
 namespace Scripts.Entities
 {
     public class Skeleton : Character
     {
         private ulong myNextTurnTime;
+        private Spell mySpell;
 
+        public override bool CanCast
+        {
+            get
+            {
+                return true;
+            }
+        }
         public Skeleton()
         {
             SetBoundingBox( -3.5 / 8.0, -0.5, 7.0 / 8.0, 0.5 );
@@ -41,6 +50,9 @@ namespace Scripts.Entities
 
             BaseWalkSpeed = 2.0;
             FinalWalkSpeed = 2.0;
+
+            mySpell = Spell.Create(SpellInfo.Get("firebolt"), 0.1);
+
         }
 
         protected override void InitializeGraphics()
@@ -63,6 +75,9 @@ namespace Scripts.Entities
 
             if ( !IsAlive )
                 return;
+
+            if (Tools.Random() < 0.005)
+                mySpell.Cast(this, new Vector2d(OriginX, OriginY - 0.5), CastAngle); 
 
             if ( IsServer && ( Map.TimeTicks >= myNextTurnTime || WalkDirection == WalkDirection.Still ) )
                 RandomizeTarget();

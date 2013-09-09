@@ -41,7 +41,7 @@ namespace Lewt
             {
                 UIButton btn = new UIButton( new Vector2( 20.0f, 20.0f ) )
                 {
-                    Position = new Vector2( dungeon.X / map.ChunkWidth * 16.0f - 2.0f, dungeon.Y / map.ChunkHeight * 16.0f - 2.0f ),
+                    Position = new Vector2( dungeon.X / map.ChunkWidth * 16.0f + 62.0f, dungeon.Y / map.ChunkHeight * 16.0f - 2.0f ),
                     Colour = new Color4( 241, 217, 169, 127 ),
                     DisabledColour = new Color4( 99, 46, 14, 127 )
                 };
@@ -67,7 +67,7 @@ namespace Lewt
         {
             SpriteRenderer.End();
 
-            MapRenderer.CameraX = 20.0f;
+            MapRenderer.CameraX = 16.0f;
             MapRenderer.CameraY = 16.0f;
 
             myMap.RenderTiles();

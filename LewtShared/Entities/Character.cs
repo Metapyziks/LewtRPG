@@ -206,7 +206,7 @@ namespace Lewt.Shared.Entities
             get { return EquippedSpell != null; }
         }
 
-        public bool CanCast
+        public virtual bool CanCast
         {
             get
             {
@@ -506,7 +506,7 @@ namespace Lewt.Shared.Entities
 
         public void Cast( Spell spell, double angle )
         {
-            if ( IsServer && CanCast && EquippedSpellItem.CanCast( this ) )
+            if ( IsServer && CanCast &&(!HasSpell || EquippedSpellItem.CanCast( this ) ) )
             {
                 SendStateUpdate( "SpellCast" );
 
