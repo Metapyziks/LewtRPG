@@ -48,7 +48,7 @@ namespace Lewt
 
                 btn.AddChild( new UISprite( dungeon.IconSprite ) { Position = new Vector2( -2.0f, -2.0f ) } );
 
-                if ( dungeon.DungeonClass.Name != "fort" )
+                if ( dungeon.DungeonClass.Name != "fort" && dungeon.DungeonClass.Name != "temple" )
                     btn.Disable();
 
                 dungeonDict.Add( btn, dungeon );
