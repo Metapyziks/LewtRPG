@@ -846,6 +846,9 @@ namespace Lewt.Client.Networking
         private void ReceiveEntityAdded( BinaryReader reader )
         {
             Entity ent = Entity.Load( reader, true );
+
+            if ( Map == null ) return;
+
             Map.AddEntity( ent );
             if ( ent is Light )
                 ( ent as Light ).Update();
@@ -854,14 +857,20 @@ namespace Lewt.Client.Networking
         private void ReceiveEntityRemoved( BinaryReader reader )
         {
             UInt32 entID = reader.ReadUInt32();
+
+            if ( Map == null ) return;
+
             Map.RemoveEntity( entID );
         }
 
         private void ReceiveEntityUpdated( BinaryReader reader )
         {
             UInt32 entID = reader.ReadUInt32();
-            Entity ent = Map.GetEntity( entID );
             byte[] data = reader.ReadBytes( reader.ReadUInt16() );
+
+            if ( Map == null ) return;
+
+            Entity ent = Map.GetEntity(entID);
             if( ent != null )
                 ent.ReceiveStateUpdate( data );
         }
