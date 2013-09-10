@@ -25,5 +25,5 @@ Lewt/bin/
 Lewt/obj/
 LewtServer/obj/
 LewtShared/bin/
-Lewt.v11.suo
+*.suo
 pingme.txt
