@@ -51,6 +51,7 @@
     <Compile Include="Entities\Character.cs" />
     <Compile Include="Entities\Entity.cs" />
     <Compile Include="Entities\Human.cs" />
+    <Compile Include="Entities\PlayerSpawn.cs" />
     <Compile Include="Items\IContainer.cs" />
     <Compile Include="Entities\IDamageable.cs" />
     <Compile Include="Items\Item.cs" />

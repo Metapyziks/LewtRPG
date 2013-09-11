@@ -12,6 +12,7 @@ using Lewt.Shared.World;
 using Lewt.Shared.Networking;
 using Lewt.Shared.Stats;
 using Lewt.Shared.Items;
+using OpenTK;
 
 namespace Lewt.Server.Networking
 {
@@ -584,17 +585,25 @@ namespace Lewt.Server.Networking
             else if ( CurrentMap is Dungeon )
             {
                 Dungeon map = CurrentMap as Dungeon;
-
-                Chunk randChunk = map.TileChunks[ (int) ( Tools.Random() * map.TileChunks.Length ) ];
-                PlayerEntity.OriginX = randChunk.X + randChunk.Width / 2;
-                PlayerEntity.OriginY = randChunk.Y + randChunk.Height / 2;
+                if (map.SpawnList.Count == 0)
+                {
+                    Chunk randChunk = map.TileChunks[(int)(Tools.Random() * map.TileChunks.Length)];
+                    PlayerEntity.OriginX = randChunk.X + randChunk.Width / 2;
+                    PlayerEntity.OriginY = randChunk.Y + randChunk.Height / 2;
+                }
+                else
+                {
+                    Vector2d spawn = map.SpawnList[(int)(Tools.Random() * map.SpawnList.Count)];
+                    PlayerEntity.OriginX = spawn.X;
+                    PlayerEntity.OriginY = spawn.Y;
+                }
                 map.AddEntity( PlayerEntity );
             }
 
             State = ClientState.RequestingMap;
             SendMapRequest();
 
-            FindLocalOverworldTiles();
+           FindLocalOverworldTiles();
 
             if ( CurrentMap is OverworldMap )
                 SendPostMap( false );

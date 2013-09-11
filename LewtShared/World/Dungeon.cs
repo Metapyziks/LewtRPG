@@ -119,6 +119,8 @@ namespace Lewt.Shared.World
         public readonly int X;
         public readonly int Y;
 
+        public readonly List<Vector2d> SpawnList;
+
         public bool HasGenerated
         {
             get
@@ -134,6 +136,8 @@ namespace Lewt.Shared.World
 
             X = x;
             Y = y;
+
+            SpawnList = new List<Vector2d>();
 
             myHasGenerated = false;
 
